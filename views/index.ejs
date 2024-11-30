@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+            height: 100%;
+            width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .nav {
+            width: 100%;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 45px 4vw;
+            font-size: 1.1vw;
+            font-weight: 600;
+            border-bottom: 1px solid gray;
+
+
+        }
+
+        .right ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            gap: 60px;
+
+
+        }
+
+        .right li {
+            cursor: pointer;
+        }
+
+        .right li:hover {
+            text-decoration: underline;
+        }
+        .nav a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .main {
+            width: 100%;
+            height: calc(100%-20px);
+        }
+
+        .container {
+
+            width: 100vw;
+            height: calc(100%-20px);
+            margin-top: 2.5vw;
+            margin-left: 4vw;
+
+        }
+
+        .container p {
+            font-size: 1.4vw;
+            font-weight: 600;
+            margin-bottom: 2vw;
+
+        }
+
+        .elembox {
+            height: 5.2vh;
+            width: 30vw;
+            background-color: crimson;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 25px;
+            align-items: center;
+            text-align: center;
+            font-size: 1.5vw;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .elembox .left i {
+            background-color: #fff;
+            padding: 2px 3px;
+            border-radius: 50%;
+            color: crimson;
+           
+        }
+        .elembox .left span{
+            font-weight: 600;
+        }
+       #delete{
+        background-color: white;
+        color: crimson;
+        padding: 3px 3px;
+        border-radius: 50%;
+        margin-left: 20px;
+        margin-right: 10px;
+       }
+       
+       
+      
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="nav">
+
+        <div class="left">
+            Khatabook
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/create">Create New Hisaab</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <p>All Hisaab Kitaab</p>
+
+        <div class="elembox">
+
+            <div class="left">
+                <span>29-11-2024</span>
+                <i class="ri-arrow-right-line"></i>
+
+            </div>
+
+
+            <div class="rigth">
+                <i id="edit" title="edit hisaab" class="ri-pencil-line"></i>
+                <i id="delete" title="delete hisaab" class="ri-delete-bin-5-line"></i>
+
+            </div>
+        </div>
+        <div class="elembox">
+
+            <div class="left">
+                <span>29-11-2024</span>
+                <i class="ri-arrow-right-line"></i>
+
+            </div>
+
+
+            <div class="rigth">
+                <i id="edit" title="edit hisaab" class="ri-pencil-line"></i>
+                <i id="delete" title="delete hisaab" class="ri-delete-bin-5-line"></i>
+
+            </div>
+        </div>
+        <div class="elembox">
+
+            <div class="left">
+                <span>29-11-2024</span>
+                <i class="ri-arrow-right-line"></i>
+
+            </div>
+
+
+            <div class="rigth">
+                <i id="edit" title="edit hisaab" class="ri-pencil-line"></i>
+                <i id="delete" title="delete hisaab" class="ri-delete-bin-5-line"></i>
+
+            </div>
+        </div>
+        <div class="elembox">
+
+            <div class="left">
+                <span>29-11-2024</span>
+                <i class="ri-arrow-right-line"></i>
+
+            </div>
+
+
+            <div class="rigth">
+                <i id="edit" title="edit hisaab" class="ri-pencil-line"></i>
+                <i id="delete" title="delete hisaab" class="ri-delete-bin-5-line"></i>
+
+            </div>
+        </div>
+        <div class="elembox">
+
+            <div class="left">
+                <span>30-11-2024
+                </span>
+                <i class="ri-arrow-right-line"></i>
+
+            </div>
+
+
+            <div class="rigth">
+                <i id="edit" title="edit hisaab" class="ri-pencil-line"></i>
+                <i id="delete" title="delete hisaab" class="ri-delete-bin-5-line"></i>
+
+            </div>
+        </div>
+      
+        </div>
+    </div>
+
+</body>
+
+</html>
