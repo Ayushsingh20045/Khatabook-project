@@ -11,7 +11,8 @@ app.use(express.urlencoded({extended:true}));
 app.get('/',(req,res)=>{
     fs.readdir('./files',function(err,files){
         if(err) throw err
-      else res.render("index",{files})
+      else res.render('index',{files})
+   
     })
 })
 
