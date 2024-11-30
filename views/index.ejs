@@ -51,7 +51,8 @@
         .right li:hover {
             text-decoration: underline;
         }
-        .nav a{
+
+        .nav a {
             text-decoration: none;
             color: black;
         }
@@ -99,23 +100,21 @@
             padding: 2px 3px;
             border-radius: 50%;
             color: crimson;
-           
+
         }
-        .elembox .left span{
+
+        .elembox .left span {
             font-weight: 600;
         }
-       #delete{
-        background-color: white;
-        color: crimson;
-        padding: 3px 3px;
-        border-radius: 50%;
-        margin-left: 20px;
-        margin-right: 10px;
-       }
-       
-       
-      
 
+        #delete {
+            background-color: white;
+            color: crimson;
+            padding: 3px 3px;
+            border-radius: 50%;
+            margin-left: 20px;
+            margin-right: 10px;
+        }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
@@ -138,84 +137,33 @@
     <div class="container">
         <p>All Hisaab Kitaab</p>
 
-        <div class="elembox">
+        <% if (files && files.length> 0) { %>
+            <% files.forEach(function(file) { %>
 
-            <div class="left">
-                <span>29-11-2024</span>
-                <i class="ri-arrow-right-line"></i>
+                <div class="elembox">
 
-            </div>
+                    <div class="left">
+                        <span>
+                            <%=file%>
+                        </span>
+                        <i class="ri-arrow-right-line"></i>
 
-
-            <div class="rigth">
-                <i id="edit" title="edit hisaab" class="ri-pencil-line"></i>
-                <i id="delete" title="delete hisaab" class="ri-delete-bin-5-line"></i>
-
-            </div>
-        </div>
-        <div class="elembox">
-
-            <div class="left">
-                <span>29-11-2024</span>
-                <i class="ri-arrow-right-line"></i>
-
-            </div>
+                    </div>
 
 
-            <div class="rigth">
-                <i id="edit" title="edit hisaab" class="ri-pencil-line"></i>
-                <i id="delete" title="delete hisaab" class="ri-delete-bin-5-line"></i>
+                    <div class="rigth">
+                        <i id="edit" title="edit hisaab" class="ri-pencil-line"></i>
+                        <i id="delete" title="delete hisaab" class="ri-delete-bin-5-line"></i>
 
-            </div>
-        </div>
-        <div class="elembox">
-
-            <div class="left">
-                <span>29-11-2024</span>
-                <i class="ri-arrow-right-line"></i>
-
-            </div>
+                    </div>
 
 
-            <div class="rigth">
-                <i id="edit" title="edit hisaab" class="ri-pencil-line"></i>
-                <i id="delete" title="delete hisaab" class="ri-delete-bin-5-line"></i>
+                </div>
 
-            </div>
-        </div>
-        <div class="elembox">
-
-            <div class="left">
-                <span>29-11-2024</span>
-                <i class="ri-arrow-right-line"></i>
-
-            </div>
-
-
-            <div class="rigth">
-                <i id="edit" title="edit hisaab" class="ri-pencil-line"></i>
-                <i id="delete" title="delete hisaab" class="ri-delete-bin-5-line"></i>
-
-            </div>
-        </div>
-        <div class="elembox">
-
-            <div class="left">
-                <span>30-11-2024
-                </span>
-                <i class="ri-arrow-right-line"></i>
-
-            </div>
-
-
-            <div class="rigth">
-                <i id="edit" title="edit hisaab" class="ri-pencil-line"></i>
-                <i id="delete" title="delete hisaab" class="ri-delete-bin-5-line"></i>
-
-            </div>
-        </div>
-      
-        </div>
+                <% }); %>
+                    <% } else { %>
+                        <p>No files available.</p>
+                        <% } %>
     </div>
 
 </body>
