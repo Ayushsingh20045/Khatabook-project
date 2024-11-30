@@ -100,12 +100,19 @@
             padding: 2px 3px;
             border-radius: 50%;
             color: crimson;
+           
+           
 
         }
+        
 
         .elembox .left span {
             font-weight: 600;
         }
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
 
         #delete {
             background-color: white;
@@ -144,7 +151,7 @@
 
                     <div class="left">
                         <span>
-                            <%=file%>
+                          <a href="/hisaab/<%=file%>"> <%=file%> </a> 
                         </span>
                         <i class="ri-arrow-right-line"></i>
 
@@ -152,8 +159,8 @@
 
 
                     <div class="rigth">
-                        <i id="edit" title="edit hisaab" class="ri-pencil-line"></i>
-                        <i id="delete" title="delete hisaab" class="ri-delete-bin-5-line"></i>
+                      <a href="/edit/<%=file%>">  <i id="edit" title="edit hisaab" class="ri-pencil-line"></i></a>
+                        <a href="/delete/<%=file%>"><i id="delete" title="delete hisaab" class="ri-delete-bin-5-line"></i></a>
 
                     </div>
 

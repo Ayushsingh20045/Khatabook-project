@@ -25,7 +25,7 @@ app.post('/writefile',(req,res)=>{
     const day = currentDate.getDate();
     const month = currentDate.getMonth() + 1; // Months are 0-indexed, so add 1
     const year = currentDate.getFullYear();
-    const fn = `${day}-${month}-${year}.txt`;
+    const fn = `${day}-${month}-${year}`;
 
     fs.writeFile(`./files/${fn}`,req.body.filedata||'',function(err){
         if(err){
@@ -35,6 +35,13 @@ app.post('/writefile',(req,res)=>{
         else res.redirect('/')
     })
    
+})
+
+app.get('/hisaab/:filename',(req,res)=>{
+    fs.readFile(`./files/${req.params.filename}`,"utf-8",function(err,data){
+        if(err) return res.send(err);
+        else res.render('hisaab',{data,filename:req.params.filename});
+    })
 })
 
 
