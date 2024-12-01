@@ -25,12 +25,9 @@ app.get("/create", (req, res) => {
 
 app.post("/writefile", (req, res) => {
   const currentDate = new Date();
-  const day = currentDate.getDate();
-  const month = currentDate.getMonth() + 1; // Months are 0-indexed, so add 1
-  const year = currentDate.getFullYear();
-  const fn = `${day}-${month}-${year}.txt`;
+  var date = `${currentDate.getDate()}-${currentDate.getMonth() + 1}-${currentDate.getFullYear()}.txt`;
 
-  fs.writeFile(`./files/${fn}`, req.body.filedata || "", function (err) {
+  fs.writeFile(`./files/${date}`, req.body.filedata || "", function (err) {
     if (err) {
       console.error("File Write Error:", err);
       return res.send("Something went wrong while creating the file.");

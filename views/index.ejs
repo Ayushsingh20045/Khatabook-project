@@ -80,7 +80,7 @@
 
         .elembox {
             height: 5.2vh;
-            width: 30vw;
+            width: 28vw;
             background-color: crimson;
             border-radius: 5px;
             display: flex;
@@ -100,6 +100,7 @@
             padding: 2px 3px;
             border-radius: 50%;
             color: crimson;
+            margin-left: 15px;
 
 
 
@@ -153,10 +154,10 @@
                     <div class="left">
                         <span>
                             <a href="/hisaab/<%=file%>">
-                                <%=file%>
+                                <%=file.split(".")[0]%>
                             </a>
                         </span>
-                        <i class="ri-arrow-right-line"></i>
+                       <a href="/hisaab/<%=file%>"> <i class="ri-arrow-right-line"></i></a>
 
                     </div>
 

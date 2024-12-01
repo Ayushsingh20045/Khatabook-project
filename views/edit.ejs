@@ -117,7 +117,7 @@
 
     <form action="/edited/<%=filename%>" method="post">
         <h3>You're editing hisaab of <span>
-                <%=filename%>
+                <%=filename.split(".")[0]%>
             </span> date</h3>
         <textarea name="editdata">
             <%=data%>
