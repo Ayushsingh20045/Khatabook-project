@@ -12,5 +12,5 @@
 #Tech Stack<br>
 -> Backend: Node.js, Express.js<br>
 -> File Handling: Node.js fs module<br>
--> Frontend: HTML, CSS, JavaScript<br>
+-> Templating: EJS (Embedded JavaScript)
 
