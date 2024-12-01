@@ -9,7 +9,7 @@
 -> Delete records if needed.<br>
 -> Data is stored securely in files using Node.js filesystem.<br>
 
-#<b>Tech Stack<b><br>
+#<b>Tech Stack:<b><br>
 -> Backend: Node.js, Express.js<br>
 -> File Handling: Node.js fs module<br>
 -> Templating: EJS (Embedded JavaScript)
